@@ -4,7 +4,11 @@
   "private": false,
   "type": "module",
   "description": "Typescript configuration files for every needs",
-  "keywords": ["typescript", "tsconfig", "configuration"],
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "configuration"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dcdavidev/tsconfig.git"
@@ -16,6 +20,9 @@
   "author": "Davide Di Criscito",
   "license": "MIT",
   "packageManager": "pnpm@10.30.1",
+  "scripts": {
+    "release": "release-it"
+  },
   "files": [
     "*.json"
   ],
@@ -38,5 +45,9 @@
     "./fastify.json": "./fastify.json",
     "./vite.json": "./vite.json",
     "./react-router.json": "./react-router.json"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^10.0.5",
+    "release-it": "^19.2.4"
   }
 }
